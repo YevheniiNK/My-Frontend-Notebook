@@ -1,217 +1,83 @@
-@charset "UTF-8";
-/*======== <Подключаем шрифты> ==============================================================================*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap");
-/* <ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ> =============================================================================*/
-* {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:focus, :active {
-  outline: none;
-}
-
-a:focus, a:active {
-  outline: none;
-}
-
-aside, nav, footer, header, section {
-  display: block;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  min-width: 320px;
-  position: relative;
-  width: 100%;
-  color: #000;
-}
-
-body {
-  font-size: 100%;
-  line-height: 1;
-  font-size: 10px;
-  font-family: "Reddit Mono", monospace;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body.lock {
-  overflow: hidden;
-}
-@media (max-width: 767.98px) {
-  body.lock {
-    width: 100%;
-    position: fixed;
-    overflow: hidden;
-  }
-}
-
-input, button, textarea {
-  font-family: "Reddit Mono", monospace;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
-/* <ОБОЛОЧКА> ===============================================================================================*/
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-}
-/* <ОСНОВНАЯ СЕТКА> =========================================================================================*/
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-  width: 100%;
-}
-@media (max-width: 1182px) {
-  .container {
-    max-width: 970px;
-  }
-}
-@media (max-width: 992.98px) {
-  .container {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767.98px) {
-  .container {
-    max-width: none;
-    padding: 0 10px;
-  }
-}
-
-/* <БЛОК "HEADER"> ==========================================================================================*/
-/* <БЛОК "FOOTER"> ==========================================================================================*/
-/* @import "_form.scss";    // Стили для "form" */
-/* @import "_card.scss";    // Стили для "card" */
-/* @import "_popup.scss";   // Стили для "popup" */
 /* ------------------ */
 .title-swiper {
-  font-size: 30px;
-  font-weight: 700;
-  color: #fff;
-  margin: 0px 0px 30px 0px;
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+	margin: 0px 0px 30px 0px;
 }
 
 /* ------------------ */
+
 /* Флекс */
 .block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+	display: flex;
 }
-
 .block__side {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 300px;
-          flex: 0 0 300px;
-  background-color: #77608d;
+	flex: 0 0 300px;
+	background-color: #77608d;
 }
-
 .block__body {
-  padding: 0px 0px 0px 30px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  min-width: 0;
+	padding: 0px 0px 0px 30px;
+	flex: 1 1 auto;
+	min-width: 0;
 }
 
 /* ------------------ */
+
 .image-slider {
-  padding: 30px 0 70px 0;
+	padding: 30px 0 70px 0;
 }
-
+.image-slider__wrapper {
+}
+.image-slider__slide {
+}
 .image-slider__image {
-  text-align: center;
+	text-align: center;
 }
-
 .image-slider__image img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 /* Стрелки */
 .image-slider .swiper-button-prev::after,
 .image-slider .swiper-button-next::after {
-  color: #fff;
-  font-size: 80px;
+	color: #fff;
+	font-size: 80px;
 }
 
 /* Пагинация */
 .image-slider .swiper-pagination {
-  bottom: 30px;
+	bottom: 30px;
 }
-
 /* Буллеты */
 .image-slider .swiper-pagination-bullet {
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  font-size: 14px;
-  background-color: #fff;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	background-color: #fff;
 }
 
 /* Фракция */
 .image-slider .swiper-pagination-fraction {
-  font-size: 20px;
-  color: #fff;
+	font-size: 20px;
+	color: #fff;
 }
 
 /* Прогрессбар */
 .image-slider .swiper-pagination-progressbar-fill {
-  background-color: #7a956b;
+	background-color: #7a956b;
 }
 
 /* Скролл */
 .image-slider .swiper-scrollbar-drag {
-  cursor: pointer;
-  background-color: #7a956b;
+	cursor: pointer;
+	background-color: #7a956b;
 }
 
 /* Автоширина */
 .image-slider .swiper-slide {
-  /* width: auto; */
+	/* width: auto; */
 }
 
 /* Мультирядность  */
@@ -224,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 	overflow: hidden;
 }
 */
+
 /* Вертикальный слайдер */
 /* 
 .image-slider {
@@ -231,12 +98,14 @@ h1, h2, h3, h4, h5, h6 {
 	height: 700px;
 }
  */
+
 /* Эффкт куб */
 /*
 .image-slider {
 	width: 500px;
 }
 */
+
 /* Миниатюры (превью) */
 /* 
 .image-mini-slider {
@@ -265,6 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 }
  */
+
 /* Слайдер в слайдере */
 /*
 .image-in-slider {
@@ -282,6 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 	max-width: 100%;
 }
 */
+
 /* Передача управления  */
 /* 
 .text {
@@ -307,6 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	margin: 0px 0px 15px 0px;
 } */
+
 /* Обновление слайдера */
 /* 
 .tabs {
@@ -401,8 +273,3 @@ h1, h2, h3, h4, h5, h6 {
 .image-slider__total {
 }
  */
-/* @import "_pagging.scss";  // Стили для "pagging" */
-/* <БЛОК "MAIN"> ============================================================================================*/
-body {
-  background-color: #000;
-}
