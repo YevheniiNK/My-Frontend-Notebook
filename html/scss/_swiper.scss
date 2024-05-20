@@ -1,0 +1,179 @@
+/* ------- Настройки слайдера ----------- */
+
+.image-slider {
+   max-width: 436px;
+   max-height: 321px;
+   overflow: hidden;
+}
+
+.image-slider__wrapper {}
+
+.image-slider__slide {}
+
+.image-slider__image {
+   text-align: center;
+}
+
+.image-slider__image img {
+   max-width: 100%;
+}
+
+
+/* Стрелки */
+.slider__elements-control .swiper-button-prev::after,
+.slider__elements-control .swiper-button-next::after {
+   display: none;
+}
+
+.slider__elements-control {
+   .swiper-button-prev {
+      background-image: url('../img/arrow-left.png');
+   }
+
+   .swiper-button-next {
+      background-image: url('../img/arrow-right.png');
+   }
+
+   .swiper-button-next,
+   .swiper-button-prev {
+      background-position: center center; // x y
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+   }
+}
+
+/* Пагинация */
+.slider__body .swiper-pagination {
+   bottom: 30px;
+   display: flex;
+   gap: 8px;
+   top: 120px;
+   left: -30px;
+   flex-direction: column;
+}
+
+/* Буллеты */
+.slider__body .swiper-pagination-bullet {
+   width: 11px;
+   height: 11px;
+   outline: 1px solid $text_color-1;
+   background-color: $bg_color-2;
+   opacity: 1;
+}
+
+.slider__body .swiper-pagination-bullet-active {
+   background-color: $bg_color-1;
+   border: 1px solid $bg_color-3;
+   
+}
+
+
+
+
+
+
+/* Фракция */
+.image-slider .swiper-pagination-fraction {
+   font-size: 20px;
+   color: #fff;
+}
+
+/* Прогрессбар */
+.image-slider .swiper-pagination-progressbar-fill {
+   background-color: #7a956b;
+}
+
+/* Скролл */
+.image-slider .swiper-scrollbar-drag {
+   cursor: pointer;
+   background-color: #7a956b;
+}
+
+/* Автоширина */
+.image-slider .swiper-slide {
+   /* width: auto; */
+}
+
+/* Мультирядность  */
+/* 
+.image-slider {
+	height: 700px;
+}
+.image-slider .swiper-slide {
+	height: calc((100% - 30px) / 2);
+	overflow: hidden;
+}
+*/
+
+/* Вертикальный слайдер */
+/* 
+.image-slider {
+	padding: 0px 0 0px 0;
+	height: 700px;
+}
+ */
+
+/* Эффкт куб */
+/*
+.image-slider {
+	width: 500px;
+}
+*/
+
+
+/* Обновление слайдера */
+/* 
+.tabs {
+}
+.tabs__nav {
+	display: flex;
+	margin: 0px -2px;
+}
+.tabs__item {
+	background-color: #794f45;
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	flex: 0 1 33.333%;
+	margin: 0px 2px;
+	cursor: pointer;
+}
+.tabs__item._active {
+	background-color: #77608d;
+}
+.tabs__body {
+	padding: 20px 0px 0px 0px;
+	font-size: 25px;
+	color: #fff;
+	line-height: 150%;
+}
+.tabs__block {
+	display: none;
+}
+.tabs__block._active {
+	display: block;
+}
+ */
+
+
+/* Фракция */
+/* 
+.image-slider__fraction {
+	padding: 10px 0px 0px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	color: #fff;
+}
+.image-slider__current {
+}
+.image-slider__sepparator {
+	margin: 0px 15px;
+}
+.image-slider__total {
+}
+ */
