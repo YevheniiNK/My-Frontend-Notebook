@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*======== <Подключаем шрифты> ==============================================================================*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sf-ui-display?styles=16099,16100,16101,16097");
 /* <ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ> =============================================================================*/
 * {
   padding: 0px;
@@ -8,38 +8,49 @@
   border: 0px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-aside, nav, footer, header, section {
+aside,
+nav,
+footer,
+header,
+section {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
   min-width: 320px;
   position: relative;
   width: 100%;
-  color: #000;
+  color: #6c6c6c;
 }
 
 body {
   font-size: 100%;
   line-height: 1;
   font-size: 10px;
-  font-family: "Reddit Mono", monospace;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-family: "SF UI Display", sans-serif;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -55,8 +66,10 @@ body.lock {
   }
 }
 
-input, button, textarea {
-  font-family: "Reddit Mono", monospace;
+input,
+button,
+textarea {
+  font-family: "SF UI Display", sans-serif;
 }
 
 input::-ms-clear {
@@ -72,7 +85,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -88,7 +102,12 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: inherit;
   font-size: inherit;
 }
@@ -123,5 +142,176 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* <БЛОК "HEADER"> ==========================================================================================*/
+header {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+header .header__body {
+  padding: 3px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+header .header__body .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 0px 0px 10px;
+}
+header .header__body .header__logo .logo__icon {
+  width: 25px;
+  height: 25px;
+}
+header .header__body .header__logo .logo__text {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0px 0px 0px 10px;
+  z-index: 11;
+  color: #F5F5F7;
+  line-height: 1px;
+  letter-spacing: 0.5px;
+}
+header .header__body .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header__body .header__menu .header-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .header__body .header__menu .header-menu__list .header-menu__item-list {
+  padding: 14px 10px;
+  opacity: 0.8;
+  color: #F5F5F7;
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+header .header__body .header__menu .header-menu__list .header-menu__item-list:hover {
+  opacity: 1;
+}
+header .header__body .header__menu .header-menu__list ._nav-span {
+  color: #8f8f8f;
+}
+
 /* <БЛОК "FOOTER"> ==========================================================================================*/
+footer {
+  padding: 15px 0px 15px 0px;
+  background: #333;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+footer .footer-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .footer-body a {
+  color: #8f8f8f;
+}
+
 /* <БЛОК "MAIN"> ============================================================================================*/
+.main {
+  padding: 30px 30px 50px 30px;
+}
+.main .main__content {
+  max-width: 700px;
+  margin: 0 auto;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .main__content .main-body {
+  position: relative;
+  padding: 50px 20px 30px 30px;
+}
+.main .main__content .main-body .main__text {
+  margin: 0px 0px 50px 0px;
+}
+.main .main__content .main-body .main__text .title span {
+  position: relative;
+  font-size: 36px;
+  line-height: 43px;
+  color: #1d1d1f;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, right top, from(#ece89d), to(#ece89d)) 0 30px/100% 8px repeat-x;
+  background: linear-gradient(90deg, #ece89d, #ece89d) 0 30px/100% 8px repeat-x;
+}
+.main .main__content .main-body .main__descr {
+  margin: 18px 0px 0px 0px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #6c6c6c;
+}
+.main .main__content .main-body .main__advantages {
+  position: relative;
+  z-index: 6;
+}
+.main .main__content .main-body .main__advantages .main__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+.main .main__content .main-body .main__item {
+  text-align: center;
+}
+.main .main__content .main-body .main__item .main__item-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #8f8f8f;
+  margin-left: -8px;
+}
+.main .main__content .main-body .main__item img {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+.main .main__content .main-body .main__bg {
+  position: absolute;
+  width: 100%;
+  height: 88%;
+  top: 50px;
+  left: -40px;
+  z-index: 5;
+}
+.main .main__content .main-body img {
+  vertical-align: top;
+}

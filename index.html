@@ -2,44 +2,104 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Иконка во вкладке -->
-	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-	<!-- Подключение таблици стилей -->
-	<link rel="stylesheet" href="./style/style.css">
-	<!-- Название страницы -->
-	<title>My Frontend Notebook</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Иконка во вкладке -->
+   <link rel="icon" type="image/png" sizes="32x32" href="./img/white-icon.png">
+   <!-- Подключение таблици стилей -->
+   <link rel="stylesheet" href="./style/style.css">
+   <!-- Название страницы -->
+   <title>My Frontend Notebook</title>
 </head>
 
 <body>
-	<div class="wrapper">
-		<header>
-			<div class="header__container container">
-				<div class="header-body">
+   <div class="wrapper">
 
-				</div>
-			</div>
-		</header>
+      <!--HEADER-->
+      <header class="header">
+         <div class="header__container container">
+            <div class="header__body">
+               <!-- LOGO -->
+               <a href="index.html" class="header__logo">
+                  <img src="./img/white-opacty-icon.png" alt="logo" class="logo__icon">
+                  <p class="logo__text">My Frontend Notebook</p>
+               </a>
+               <!--NAVIGATION-->
+               <nav class="header__menu">
+                  <ul class="header-menu__list">
+                     <a href="index.html" class="header-menu__item-list">Главная</a>
+                     <span class="header-menu__item-list _nav-span">|</span>
+                     <a href="./pages/page-html.html" class="header-menu__item-list">HTML</a>
+                     <span class="header-menu__item-list _nav-span">|</span>
+                     <a href="./pages/page-css.html" class="header-menu__item-list">CSS</a>
+                     <span class="header-menu__item-list _nav-span">|</span>
+                     <a href="./pages/pagejs.html" class="header-menu__item-list">JS</a>
+                     <span class="header-menu__item-list _nav-span">|</span>
+                     <a href="./pages/pagejs.html" class="header-menu__item-list">Шаблоны</a>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
 
-		<main>
-			<div class='main__container container'>
-				<div class="main-body">
+      <!--MAIN-->
+      <main class="main">
+         <div class='main__container container'>
+            <div class="main__content">
+               <div class="main-body">
+                  <!--Верхний блок-->
+                  <div class="main__text">
+                     <div class="main__title title">
+                        <span>Привет!</span>
+                     </div>
+                     <h1 class="main__title title">
+                        <span>Это «Мой интерфейсный блокнот»!</span>
+                     </h1>
+                     <div class="main__descr">Меня зовут Хмара Евгений, я учусь на разработчика сайтов.</div>
+                     <div class="main__descr">Рад приветствовать тебя в моем конспекте.</div>
+                  </div>
+                  <!-- Нижний блок -->
+                  <div class="main__advantages">
+                     <div class="main__descr">Здесь ты найдешь:</div>
+                     <ul class="main__list">
+                        <li class="main__item">
+                           <div class="main__item-text">Обучение</div>
+                           <img class="main__item-img main__item-img_1" src="img/page-main/education-icon.png"
+                              alt="education-icon">
+                        </li>
+                        <li class="main__item">
+                           <div class="main__item-text">Примеры</div>
+                           <img class="main__item-img main__item-img_2" src="img/page-main/examples-icon.png"
+                              alt="examples-icon">
+                        </li>
+                        <li class="main__item">
+                           <div class="main__item-text">Шаблоны</div>
+                           <img class="main__item-img main__item-img_3" src="img/page-main/templates-icon.png"
+                              alt="templates-icon">
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- Фон -->
+                  <div class="main__bg">
+                     <img src="img/page-main/main-bg.png" alt="main-bg">
+                  </div>
+               </div>
+            </div>
 
-				</div>
-			</div>
-		</main>
+         </div>
+      </main>
 
-		<footer>
-			<div class='footer__container container'>
-				<div class="footer-body">
+      <!--FOOTER-->
+      <footer class="footer">
+         <div class='footer__container container'>
+            <div class="footer-body">
+               <a href="https://github.com/YevheniiNK" class="copyright" target="_blank">&#169;YevheniiUA</a>
+            </div>
+         </div>
+      </footer>
 
-				</div>
-			</div>
-		</footer>
-
-		<!-- Подключение скрипта -->
-		<script src="./js/main.js"></script>
+      <!-- Подключение скрипта -->
+      <script src="./js/main.js"></script>
 </body>
 
 </html>
