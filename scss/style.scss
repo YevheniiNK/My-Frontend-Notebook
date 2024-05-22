@@ -15,39 +15,31 @@
 // <ШРИФТЫ> =================================================================================================
 
 /*======== <Подключаем шрифты> ==============================================================================*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap');
+
 
 //======== <Стили шрифтов по умолчанию> =====================================================================
-$fontfamily: "Roboto", sans-serif;     	// Основной шрифт
+$fontfamily: "Reddit Mono", monospace; 	// Основной шрифт
 $fontsize: 10px; 									// Основной размер шрифта
 $fontcolor: #000;							  // Основной цвет шрифта
 
 // <НАБОР ЦВЕТОВ> ===========================================================================================
 
 // ============= <Набор цветов для фона> ====================================================================
-$bg_color-1: #E78A00;
-$bg_color-2: #2B2B2B;
-$bg_color-3: #4C4C4C;
+$bg_color-1: red;
+$bg_color-2: blue;
 
 // ============= <Набор цветов для текста> ==================================================================
-$text_color-1: #fff;
-$text_color-2: #000;
+$text_color-1: green;
+$text_color-2: yellow;
 
 // <ПЕРЕМЕННЫЕ> =============================================================================================
 $minwidth: 320px;
-$mw: 1152;
+$mw: 1170;
 $md1: $mw+12;
-$md2: 1010.98;
-$md3: 785.98;
-$md4: 497.98;
-
-$minwidth: 320px;
-$mws: 985;
-$mds1: $mw+12;
-$mds2: 777.98;
-$mds3: 552.98;
-$mds4: 264.98;
-
+$md2: 992.98;
+$md3: 767.98;
+$md4: 479.98;
 
 /* <ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ> =============================================================================*/
 *{padding: 0px;margin: 0px;border: 0px;}
@@ -59,12 +51,6 @@ html,body{height: 100%;margin: 0;padding: 0;min-width: $minwidth;position: relat
 body{font-size: 100%;line-height: 1;font-size: $fontsize;font-family: $fontfamily;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
 	&.lock{overflow: hidden;
 		@media (max-width:$md3+px){
-			width: 100%;
-			position: fixed;
-			overflow: hidden;
-		}
-
-      @media (max-width:$mds3+px){
 			width: 100%;
 			position: fixed;
 			overflow: hidden;
@@ -81,22 +67,17 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 
+/* <ОБОЛОЧКА> ===============================================================================================*/
+.wrapper{width: 100%;min-height: 100%;overflow: hidden;
+	&.loaded{}
+}
+
 /* <ОСНОВНАЯ СЕТКА> =========================================================================================*/
-//.container{max-width:$mw+px;margin: 0 auto;width: 100%;
-	//@media (max-width:$md1+px){max-width: 1010px;}
-	//@media (max-width:$md2+px){max-width: 785px;}
-	//@media (max-width:$md3+px){max-width: none;padding:0 10px;}
-//}
-//.small-container{max-width:$mws+px;margin: 0 auto;width: 100%;
-	//@media (max-width:$mds1+px){max-width: 777px;padding:0 10px;}
-	//@media (max-width:$mds3+px){max-width: none;}
-//}
-
-
-.container {max-width: $mw+px;margin: 0 auto;width: 100%;}
-
-.small-container{max-width:$mws+px;margin: 0 auto;width: 100%; padding: 0 15px;}
-
+.container{max-width:$mw+px;margin: 0 auto;width: 100%;
+	@media (max-width:$md1+px){max-width: 970px;}
+	@media (max-width:$md2+px){max-width: 750px;}
+	@media (max-width:$md3+px){max-width: none;padding:0 10px;}
+}
 
 // <ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ> ==========================================================
 @import "_header.scss";  // Стили для "header"
@@ -104,78 +85,15 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 // @import "_form.scss";    // Стили для "form" 
 // @import "_card.scss";    // Стили для "card" 
 // @import "_popup.scss";   // Стили для "popup" 
-@import "_swiper.scss";  // Стили для "swiper" 
+// @import "_swiper.scss";  // Стили для "swiper" 
 // @import "_pagging.scss";  // Стили для "pagging" 
 
 
-/* <BODY> ============================================================================================*/
+/* <БЛОК "MAIN"> ============================================================================================*/
 
-.body {
-   margin: 0 auto;
-	max-width: 1320px;
-   background-color: $bg_color-1;
-   a {
-      color: $text_color-1;
-   }
-
-   .slider-wp {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0 15px;
-      position: relative;
-      z-index: 1;
-   }
-
-   .slider {
-      max-width: 1152px;
-      min-height: 700px;
-      border-radius: 24px;
-      padding: 29px 0;
-      position: relative;
-      z-index: 2;
-      .bg-img {
-         position: absolute;
-         top: 0;
-         right: 0;
-         z-index: 1;
-         width: 100%;
-         height: 100%;
-      }
-   }
-
-   .slider::before {
-      content: '';
-      background-color: $bg_color-3;
-      width: 210px;
-      height: 13px;
-      position: absolute;
-      top: 210px;
-      left: -48px;
-      border-radius: 8px;
-      z-index: 4;
-   }
-
-   .slider::after {
-      content: '';
-      background-color: $bg_color-3;
-      width: 300px;
-      height: 13px;
-      position: absolute;
-      top: 373px;
-      right: -50px;
-      border-radius: 8px;
-      z-index: 4;
-   }
+body {
+	
 }
 
-/* -------Настройки тела слайдера----------- */
 
-.slider__body {
-   display: flex;
-   justify-content: center;
-   margin-top: 150px;
-   position: relative;
-}
+
