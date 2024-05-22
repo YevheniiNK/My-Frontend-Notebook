@@ -1,9 +1,57 @@
-
 /* <БЛОК "FOOTER"> ==========================================================================================*/
 
-footer {
-   .footer__container {}
+.slider__footer {
 
-   .footer-body {}
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 25px;
+
+   .slider__footer-title {
+      font-size: 32px;
+      color: #fff;
+      position: relative;
+      z-index: 5;
+      @include anim(0.2s, 0s);
+   }
+
+   .slider__footer-btn {
+      background-color: #E78A00;
+      width: 180px;
+      height: 45px;
+      border-radius: 24px;
+      position: relative;
+      z-index: 5;
+      margin: 0 auto;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+         background-color: #da9a3c;
+         @include anim(0.2s, 0s);
+      }
+
+      .footer-btn__text {
+         display: flex;
+         justify-content: center;
+         font-size: 18px;
+         font-weight: 700;
+         line-height: 45px;
+      }
+
+      .footer-btn__img {
+         width: 32px;
+         height: 32px;
+      }
+   }
+
+   .slider__elements-control {
+      display: flex;
+      justify-content: space-between;
+
+   }
+
 }
-

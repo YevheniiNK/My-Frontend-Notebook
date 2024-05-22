@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*======== <Подключаем шрифты> ==============================================================================*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 /* <ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ> =============================================================================*/
 * {
   padding: 0px;
@@ -39,7 +39,7 @@ body {
   font-size: 100%;
   line-height: 1;
   font-size: 10px;
-  font-family: "Reddit Mono", monospace;
+  font-family: "Roboto", sans-serif;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -47,7 +47,14 @@ body {
 body.lock {
   overflow: hidden;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 785.98px) {
+  body.lock {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+}
+@media (max-width: 552.98px) {
   body.lock {
     width: 100%;
     position: fixed;
@@ -56,7 +63,7 @@ body.lock {
 }
 
 input, button, textarea {
-  font-family: "Reddit Mono", monospace;
+  font-family: "Roboto", sans-serif;
 }
 
 input::-ms-clear {
@@ -93,35 +100,374 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
 }
 
-/* <ОБОЛОЧКА> ===============================================================================================*/
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-}
 /* <ОСНОВНАЯ СЕТКА> =========================================================================================*/
 .container {
-  max-width: 1170px;
+  max-width: 1152px;
   margin: 0 auto;
   width: 100%;
 }
-@media (max-width: 1182px) {
-  .container {
-    max-width: 970px;
-  }
-}
-@media (max-width: 992.98px) {
-  .container {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767.98px) {
-  .container {
-    max-width: none;
-    padding: 0 10px;
-  }
+
+.small-container {
+  max-width: 985px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
 }
 
-/* <БЛОК "HEADER"> ==========================================================================================*/
+/* <БЛОК "HEADER-SLIDER"> ==========================================================================================*/
+.slider__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 5;
+}
+.slider__header .slider-logo {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.slider__header .slider__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 389px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider__header .slider__nav .nav__item {
+  font-size: 16px;
+}
+.slider__header .slider__nav .button {
+  border: 1px solid #fff;
+  border-radius: 24px;
+  font-size: 18px;
+  padding: 10px 45px;
+  font-weight: 700;
+  display: block;
+}
+.slider__header .slider__nav .button:hover {
+  background-color: #E78A00;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  border: 1px solid #4C4C4C;
+}
+
 /* <БЛОК "FOOTER"> ==========================================================================================*/
-/* <БЛОК "MAIN"> ============================================================================================*/
+.slider__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+}
+.slider__footer .slider__footer-title {
+  font-size: 32px;
+  color: #fff;
+  position: relative;
+  z-index: 5;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+.slider__footer .slider__footer-btn {
+  background-color: #E78A00;
+  width: 180px;
+  height: 45px;
+  border-radius: 24px;
+  position: relative;
+  z-index: 5;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.slider__footer .slider__footer-btn:hover {
+  background-color: #da9a3c;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+.slider__footer .slider__footer-btn .footer-btn__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 45px;
+}
+.slider__footer .slider__footer-btn .footer-btn__img {
+  width: 32px;
+  height: 32px;
+}
+.slider__footer .slider__elements-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* ------- Настройки слайдера ----------- */
+.image-slider {
+  max-width: 436px;
+  max-height: 321px;
+  overflow: hidden;
+}
+
+.image-slider__image {
+  text-align: center;
+}
+
+.image-slider__image img {
+  max-width: 100%;
+}
+
+/* Стрелки */
+.slider__elements-control .swiper-button-prev::after,
+.slider__elements-control .swiper-button-next::after {
+  display: none;
+}
+
+.slider__elements-control .swiper-button-prev {
+  background-image: url("../img/arrow-left.png");
+}
+.slider__elements-control .swiper-button-next {
+  background-image: url("../img/arrow-right.png");
+}
+.slider__elements-control .swiper-button-next,
+.slider__elements-control .swiper-button-prev {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+/* Пагинация */
+.slider__body .swiper-pagination {
+  bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  top: 120px;
+  left: -30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Буллеты */
+.slider__body .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  outline: 1px solid #fff;
+  background-color: #2B2B2B;
+  opacity: 1;
+}
+
+.slider__body .swiper-pagination-bullet-active {
+  background-color: #E78A00;
+  border: 1px solid #4C4C4C;
+}
+
+/* Фракция */
+.image-slider .swiper-pagination-fraction {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Прогрессбар */
+.image-slider .swiper-pagination-progressbar-fill {
+  background-color: #7a956b;
+}
+
+/* Скролл */
+.image-slider .swiper-scrollbar-drag {
+  cursor: pointer;
+  background-color: #7a956b;
+}
+
+/* Автоширина */
+.image-slider .swiper-slide {
+  /* width: auto; */
+}
+
+/* Мультирядность  */
+/* 
+.image-slider {
+	height: 700px;
+}
+.image-slider .swiper-slide {
+	height: calc((100% - 30px) / 2);
+	overflow: hidden;
+}
+*/
+/* Вертикальный слайдер */
+/* 
+.image-slider {
+	padding: 0px 0 0px 0;
+	height: 700px;
+}
+ */
+/* Эффкт куб */
+/*
+.image-slider {
+	width: 500px;
+}
+*/
+/* Обновление слайдера */
+/* 
+.tabs {
+}
+.tabs__nav {
+	display: flex;
+	margin: 0px -2px;
+}
+.tabs__item {
+	background-color: #794f45;
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	flex: 0 1 33.333%;
+	margin: 0px 2px;
+	cursor: pointer;
+}
+.tabs__item._active {
+	background-color: #77608d;
+}
+.tabs__body {
+	padding: 20px 0px 0px 0px;
+	font-size: 25px;
+	color: #fff;
+	line-height: 150%;
+}
+.tabs__block {
+	display: none;
+}
+.tabs__block._active {
+	display: block;
+}
+ */
+/* Фракция */
+/* 
+.image-slider__fraction {
+	padding: 10px 0px 0px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	color: #fff;
+}
+.image-slider__current {
+}
+.image-slider__sepparator {
+	margin: 0px 15px;
+}
+.image-slider__total {
+}
+ */
+/* <BODY> ============================================================================================*/
+.body {
+  margin: 0 auto;
+  max-width: 1320px;
+  background-color: #E78A00;
+}
+.body a {
+  color: #fff;
+}
+.body .slider-wp {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+.body .slider {
+  max-width: 1152px;
+  min-height: 700px;
+  border-radius: 24px;
+  padding: 29px 0;
+  position: relative;
+  z-index: 2;
+}
+.body .slider .bg-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.body .slider::before {
+  content: "";
+  background-color: #4C4C4C;
+  width: 210px;
+  height: 13px;
+  position: absolute;
+  top: 210px;
+  left: -48px;
+  border-radius: 8px;
+  z-index: 4;
+}
+.body .slider::after {
+  content: "";
+  background-color: #4C4C4C;
+  width: 300px;
+  height: 13px;
+  position: absolute;
+  top: 373px;
+  right: -50px;
+  border-radius: 8px;
+  z-index: 4;
+}
+
+/* -------Настройки тела слайдера----------- */
+.slider__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 150px;
+  position: relative;
+}

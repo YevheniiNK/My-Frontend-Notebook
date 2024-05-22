@@ -1,9 +1,41 @@
+/* <БЛОК "HEADER-SLIDER"> ==========================================================================================*/
 
-/* <БЛОК "HEADER"> ==========================================================================================*/
+.slider__header {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   z-index: 5;
 
-header {
-	.header__container {}
+   .slider-logo {
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+   }
 
-	.header-body {}
+   .slider__nav {
+      display: flex;
+      justify-content: space-between;
+      min-width: 389px;
+      align-items: center;
+
+      .nav__item {
+         font-size: 16px;
+      }
+
+      .button {
+         border: 1px solid $text_color-1;
+         border-radius: 24px;
+         font-size: 18px;
+         padding: 10px 45px;
+         font-weight: 700;
+         display: block;
+
+         &:hover {
+            background-color: $bg_color-1;
+            @include anim(0.2s, 0s);
+            border: 1px solid $bg_color-3;
+         }
+      }
+   }
+
 }
-
