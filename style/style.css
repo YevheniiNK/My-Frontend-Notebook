@@ -254,6 +254,72 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* <Content Start-Page> ============================================================================================*/
+.page-index {
+  max-width: 735px;
+  height: 85vh;
+  position: relative;
+  padding: 30px 30px 50px 30px;
+}
+.page-index .page-index__text {
+  margin: 15px 0px 50px 0px;
+}
+.page-index .page-index__text .title span {
+  position: relative;
+  font-size: 36px;
+  line-height: 43px;
+  color: #1d1d1f;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, right top, from(#ece89d), to(#ece89d)) 0 30px/100% 8px repeat-x;
+  background: linear-gradient(90deg, #ece89d, #ece89d) 0 30px/100% 8px repeat-x;
+}
+.page-index .page-index__descr {
+  margin: 18px 0px 0px 0px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #6c6c6c;
+}
+.page-index .page-index__advantages {
+  position: relative;
+  z-index: 6;
+}
+.page-index .page-index__advantages .page-index__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+.page-index .page-index__item {
+  text-align: center;
+}
+.page-index .page-index__item .page-index__item-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #8f8f8f;
+  margin-left: -8px;
+}
+.page-index .page-index__item img {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+.page-index .page-index__bg {
+  position: absolute;
+  width: 160%;
+  height: 95%;
+  top: 50px;
+  left: -40px;
+  z-index: -1;
+}
+.page-index .page-index__bg img {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
 /* <Content HTML> ============================================================================================*/
 /* <Content CSS> ============================================================================================*/
 /* <Content JS> ============================================================================================*/
