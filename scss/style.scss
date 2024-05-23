@@ -17,11 +17,11 @@
 @import url('https://fonts.cdnfonts.com/css/sf-ui-display?styles=16099,16100,16101,16097');
 
 //======== <Стили шрифтов по умолчанию> =====================================================================
-$fontfamily: 'SF UI Display', sans-serif; // Основной шрифт
-$fontsize: 10px; // Основной размер шрифта
-$fontweight: 300; // Основная ширина текста
-$letterspacing: 1px; // Основной межбуквенный интервал
-$fontcolor: #6c6c6c; // Основной цвет текста
+$fontfamily: 'SF UI Display', sans-serif;   // Основной шрифт
+$fontsize: 14px;                            // Основной размер шрифта
+$fontweight: 300;                           // Основная ширина текста
+$letterspacing: 1px;                        // Основной межбуквенный интервал
+$fontcolor: #6c6c6c;                      // Основной цвет текста
 
 // <НАБОР ЦВЕТОВ> ===========================================================================================
 
@@ -30,10 +30,12 @@ $bg_color-1: #333;
 $underline: linear-gradient(90deg, #ece89d, #ece89d) 0 30px / 100% 8px repeat-x;
 
 // ============= <Набор цветов для текста> ====================================================================
-$text_color-1: #F5F5F7; // логотип
-$text_color-2: rgba(245, 245, 247, 0.8); // навигация
-$text_color-3: #1d1d1f; // заголовок
-$text_color-4: #8f8f8f; // заголовок для карт на стартовом экране
+$text_color-1: #F5F5F7;                   // логотип
+$text_color-2: rgba(245, 245, 247, 0.8);  // навигация
+$text_color-3: #1d1d1f;                   // заголовок
+$text_color-4: #8f8f8f;                   // заголовок для карт на стартовом экране
+$text_color-5: #6c6c6c; 
+$text_color-6: #ffffff;                  
 
 
 // <ПЕРЕМЕННЫЕ> =============================================================================================
@@ -72,10 +74,6 @@ h1,h2,h3,h4,h5,h6 {font-weight: inherit;font-size: inherit;}
 
 /* <ОБОЛОЧКА> ===============================================================================================*/
 .wrapper {width: 100%;min-height: 100%;overflow: hidden;
-   // Притискаємо footer
-   >main {flex: 1 1 auto;}
-   // Фікс для слайдерів
-   >* {min-width: 0;}
    &.loaded {}
 }
 
@@ -87,16 +85,28 @@ h1,h2,h3,h4,h5,h6 {font-weight: inherit;font-size: inherit;}
 }
 
 // <ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ ЭЛЕМЕНТОВ> ==========================================================
-@import "_header.scss"; // Стили для "header"
-@import "_footer.scss"; // Стили для "footer"
-// @import "_form.scss";    // Стили для "form" 
-// @import "_card.scss";    // Стили для "card" 
-// @import "_popup.scss";   // Стили для "popup" 
-// @import "_swiper.scss";  // Стили для "swiper" 
-// @import "_pagging.scss";  // Стили для "pagging" 
+@import "_header.scss";        // Стили для "header"
+@import "_footer.scss";        // Стили для "footer"
+// @import "_form.scss";       // Стили для "form" 
+// @import "_card.scss";       // Стили для "card" 
+// @import "_popup.scss";      // Стили для "popup" 
+// @import "_swiper.scss";     // Стили для "swiper" 
+// @import "_pagging.scss";    // Стили для "pagging" 
 
 // <ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ> ==========================================================
-@import "_index.scss"; // Стили для "index.html"
+@import "_index.scss";       // Стили для "index.html"
+@import "_html.scss";        // Стили для "index.html"
 
 /* <БЛОК "MAIN"> ============================================================================================*/
+.main {}
+.main__container {
+   padding: 51px 0 0 0;
+}
+.main__content {
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
 

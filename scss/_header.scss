@@ -1,70 +1,72 @@
 /* <БЛОК "HEADER"> ==========================================================================================*/
 
-header {
-
+.header {
    background-color: $bg_color-1;
    position: fixed;
    top: 0;
    left: 0;
    min-width: 100%;
+}
 
-   .header__container {}
+.header__container {}
 
-   .header__body {
-      padding: 3px 0;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+.header__content {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
 
-      .header__logo {
-         display: flex;
-         align-items: center;
-         padding: 0px 0px 0px 10px;
+.header__logo {
+   display: flex;
+   align-items: center;
+   padding: 0px 0px 0px 10px;
 
-         .logo__icon {
-            width: 25px;
-            height: 25px;
-         }
-
-         .logo__text {
-            font-size: 14px;
-            font-weight: 700;
-            padding: 0px 0px 0px 10px;
-            z-index: 11;
-            color: $text_color-1;
-            line-height: 1px;
-            letter-spacing: 0.5px;
-         }
-      }
-
-      .header__menu {
-         display: flex;
-         align-items: center;
-
-         .header-menu__list {
-            display: flex;
-
-            .header-menu__item-list {
-               padding: 14px 10px;
-               opacity: 0.8;
-               color: $text_color-1;
-               font-size: 14px;
-               line-height: 17px;
-               transition: all 0.3s ease 0s;
-
-               &:hover {
-                  opacity: 1;
-               }
-            }
-
-            ._nav-span {
-               color: $text_color-4;
-            }
-         }
-
-
-      }
-
-
+   .logo__icon {
+      width: 25px;
+      height: 25px;
    }
+
+   .logo__text {
+      font-size: 14px;
+      font-weight: 700;
+      padding: 0px 0px 0px 10px;
+      z-index: 11;
+      color: $text_color-1;
+      line-height: 1px;
+      letter-spacing: 0.5px;
+   }
+}
+
+.header__menu {
+   display: flex;
+   align-items: center;
+}
+
+.header-menu__list {
+   display: flex;
+   gap: 5px;
+}
+
+.header-menu__item-list {
+   padding: 10px 0;
+   opacity: 0.8;
+   color: $text_color-1;
+   font-size: 14px;
+   line-height: 17px;
+   transition: all 0.3s ease 0s;
+   width: 70px;
+   text-align: center;
+
+   &:hover,{
+      opacity: 1;
+      @include anim(0.4s, 0s);
+   }
+}
+// Подсветка активной страници в меню
+._activ-link {
+   opacity: 1;
+   background-color: $text_color-6;
+   border-radius: 5px 5px 0 0;
+   color: $text_color-3;
+   font-weight: 700; 
 }

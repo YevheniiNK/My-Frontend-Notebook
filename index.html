@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
    <meta charset="UTF-8">
@@ -18,7 +18,7 @@
       <!--HEADER-->
       <header class="header">
          <div class="header__container container">
-            <div class="header__body">
+            <div class="header__content">
                <!-- LOGO -->
                <a href="index.html" class="header__logo">
                   <img src="./img/white-opacty-icon.png" alt="logo" class="logo__icon">
@@ -27,15 +27,11 @@
                <!--NAVIGATION-->
                <nav class="header__menu">
                   <ul class="header-menu__list">
-                     <a href="index.html" class="header-menu__item-list">Главная</a>
-                     <span class="header-menu__item-list _nav-span">|</span>
+                     <a href="index.html" class="header-menu__item-list _activ-link">Главная</a>
                      <a href="./pages/page-html.html" class="header-menu__item-list">HTML</a>
-                     <span class="header-menu__item-list _nav-span">|</span>
-                     <a href="./pages/page-css.html" class="header-menu__item-list">CSS</a>
-                     <span class="header-menu__item-list _nav-span">|</span>
-                     <a href="./pages/pagejs.html" class="header-menu__item-list">JS</a>
-                     <span class="header-menu__item-list _nav-span">|</span>
-                     <a href="./pages/pagejs.html" class="header-menu__item-list">Шаблоны</a>
+                     <a href="#" class="header-menu__item-list">CSS</a>
+                     <a href="#" class="header-menu__item-list">JS</a>
+                     <a href="#" class="header-menu__item-list">Шаблоны</a>
                   </ul>
                </nav>
             </div>
@@ -45,54 +41,52 @@
       <!--MAIN-->
       <main class="main">
          <div class='main__container container'>
-            <div class="main__content">
-               <div class="main-body">
-                  <!--Верхний блок-->
-                  <div class="main__text">
-                     <div class="main__title title">
-                        <span>Привет!</span>
-                     </div>
-                     <h1 class="main__title title">
-                        <span>Это «Мой интерфейсный блокнот»!</span>
-                     </h1>
-                     <div class="main__descr">Меня зовут Хмара Евгений, я учусь на разработчика сайтов.</div>
-                     <div class="main__descr">Рад приветствовать тебя в моем конспекте.</div>
+            <!-- Главный экран -->
+            <div class="main__content page-index">
+               <!--Верхний блок-->
+               <div class="page-index__text">
+                  <div class="page-index__title title">
+                     <span>Привет!</span>
                   </div>
-                  <!-- Нижний блок -->
-                  <div class="main__advantages">
-                     <div class="main__descr">Здесь ты найдешь:</div>
-                     <ul class="main__list">
-                        <li class="main__item">
-                           <div class="main__item-text">Обучение</div>
-                           <img class="main__item-img main__item-img_1" src="img/page-main/education-icon.png"
-                              alt="education-icon">
-                        </li>
-                        <li class="main__item">
-                           <div class="main__item-text">Примеры</div>
-                           <img class="main__item-img main__item-img_2" src="img/page-main/examples-icon.png"
-                              alt="examples-icon">
-                        </li>
-                        <li class="main__item">
-                           <div class="main__item-text">Шаблоны</div>
-                           <img class="main__item-img main__item-img_3" src="img/page-main/templates-icon.png"
-                              alt="templates-icon">
-                        </li>
-                     </ul>
-                  </div>
-                  <!-- Фон -->
-                  <div class="main__bg">
-                     <img src="img/page-main/main-bg.png" alt="main-bg">
-                  </div>
+                  <h1 class="page-index__title title">
+                     <span>Это «Мой интерфейсный блокнот»!</span>
+                  </h1>
+                  <div class="page-index__descr">Меня зовут Евгений, я учусь на разработчика сайтов.</div>
+                  <div class="page-index__descr">Рад приветствовать тебя в моем конспекте.</div>
+               </div>
+               <!-- Нижний блок -->
+               <div class="page-index__advantages">
+                  <div class="page-index__descr">Здесь ты найдешь:</div>
+                  <ul class="page-index__list">
+                     <li class="page-index__item">
+                        <div class="page-index__item-text">Обучение</div>
+                        <img class="page-index__item-img page-index__item-img_1" src="img/page-main/education-icon.png"
+                           alt="education-icon">
+                     </li>
+                     <li class="page-index__item">
+                        <div class="page-index__item-text">Примеры</div>
+                        <img class="page-index__item-img page-index__item-img_2" src="img/page-main/examples-icon.png"
+                           alt="examples-icon">
+                     </li>
+                     <li class="page-index__item">
+                        <div class="page-index__item-text">Шаблоны</div>
+                        <img class="page-index__item-img page-index__item-img_3" src="img/page-main/templates-icon.png"
+                           alt="templates-icon">
+                     </li>
+                  </ul>
+               </div>
+               <!-- Фон -->
+               <div class="page-index__bg">
+                  <img src="img/page-main/main-bg.png" alt="main-bg">
                </div>
             </div>
-
          </div>
       </main>
 
       <!--FOOTER-->
       <footer class="footer">
          <div class='footer__container container'>
-            <div class="footer-body">
+            <div class="footer__content">
                <a href="https://github.com/YevheniiNK" class="copyright" target="_blank">&#169;YevheniiUA</a>
             </div>
          </div>
