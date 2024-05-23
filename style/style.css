@@ -8,33 +8,24 @@
   border: 0px;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus,
-:active {
+:focus, :active {
   outline: none;
 }
 
-a:focus,
-a:active {
+a:focus, a:active {
   outline: none;
 }
 
-aside,
-nav,
-footer,
-header,
-section {
+aside, nav, footer, header, section {
   display: block;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -66,9 +57,7 @@ body.lock {
   }
 }
 
-input,
-button,
-textarea {
+input, button, textarea {
   font-family: "SF UI Display", sans-serif;
 }
 
@@ -85,8 +74,7 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a,
-a:visited {
+a, a:visited {
   text-decoration: none;
 }
 
@@ -102,12 +90,7 @@ img {
   vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
   font-size: inherit;
 }
@@ -117,6 +100,14 @@ h6 {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
+}
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.wrapper > * {
+  min-width: 0;
 }
 /* <ОСНОВНАЯ СЕТКА> =========================================================================================*/
 .container {
@@ -235,7 +226,6 @@ footer .footer-body a {
   color: #8f8f8f;
 }
 
-/* <БЛОК "MAIN"> ============================================================================================*/
 .main {
   padding: 30px 30px 50px 30px;
 }
@@ -315,3 +305,5 @@ footer .footer-body a {
 .main .main__content .main-body img {
   vertical-align: top;
 }
+
+/* <БЛОК "MAIN"> ============================================================================================*/
