@@ -27,17 +27,22 @@ $fontcolor: #6c6c6c;                      // Основной цвет текс�
 
 // ============= <Набор цветов для фона> ==================================================================
 $bg_color-1: #333;
+$bg_color-2: #5e5372; // фон header - footer
+$bg_color-3: #ebe691; 
+$bg_color-4: #413659; // тень
+$bg_color-5: #30b9e4;
+
 $underline: linear-gradient(90deg, #ece89d, #ece89d) 0 30px / 100% 8px repeat-x;
 
 // ============= <Набор цветов для текста> ====================================================================
-$text_color-1: #F5F5F7;                   // логотип
-$text_color-2: rgba(245, 245, 247, 0.8);  // навигация
-$text_color-3: #1d1d1f;                   // заголовок
-$text_color-4: #8f8f8f;                   // заголовок для карт на стартовом экране
-$text_color-5: #6c6c6c; 
-$text_color-6: #ffffff;                  
-
-
+$text_color-1: #ebe691;                   // логотип
+$text_color-2: #1d1d1f;                   // заголовок
+$text_color-3: #8f8f8f;                   // заголовок для карт на стартовом экране
+$text_color-4: #6c6c6c; 
+$text_color-5: #ffffff;
+$text_color-6: #5e5372;  
+$text_color-7: #32b5a4; 
+               
 // <ПЕРЕМЕННЫЕ> =============================================================================================
 $minwidth: 320px;
 $mw: 1170;
@@ -93,35 +98,50 @@ h1,h2,h3,h4,h5,h6 {font-weight: inherit;font-size: inherit;}
 // @import "_swiper.scss";     // Стили для "swiper" 
 // @import "_pagging.scss";    // Стили для "pagging" 
 
+// Рамка
+/*
+   box-shadow: 10px 7px 5px $bg_color-4;
+   border: 1px solid $bg_color-4;
+*/
 
 
 /* <БЛОК "MAIN"> ============================================================================================*/
-.main {}
-.main__container {
-   padding: 51px 0 0 0;
-}
-.main__content {
-   margin: 0 auto;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+.main {
+   height: 100vh;
+   .main__container {
+      
+   }
+   .main__content {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+   }
 }
 
 /* <Content Start-Page> ============================================================================================*/
 .page-index {
-   max-width: 735px;
-   height: 85vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 735px;
+   height: 475px;
    position: relative;
-   padding: 30px 30px 50px 30px;
+   padding: 30px;
+   border-radius: 20px;
+}
 
+// контент слайдера swiper_item-1
    .page-index__text {
-      margin: 15px 0px 50px 0px;
+      margin: 0px 0px 32px 0px;
 
       .title span {
          position: relative;
          font-size: 36px;
          line-height: 43px;
-         color: $text_color-3;
+         color: $text_color-6;
          font-weight: 700;
          background: $underline;
       }
@@ -131,7 +151,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: inherit;font-size: inherit;}
       margin: 18px 0px 0px 0px;
       font-size: 18px;
       line-height: 21px;
-      color: $text_color-5;
+      color: $text_color-4;
    }
 
    .page-index__advantages {
@@ -177,7 +197,8 @@ h1,h2,h3,h4,h5,h6 {font-weight: inherit;font-size: inherit;}
          height: 100%;
       }
    }
-}
+
+
 
 /* <Content HTML> ============================================================================================*/
 
