@@ -129,6 +129,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: inherit;font-size: inherit;}
    padding: 30px;
    border-radius: 20px;
    @include shadow;
+   overflow: hidden;
    
    .page-index__text {
       margin: 0px 0px 32px 0px;
@@ -195,6 +196,15 @@ h1,h2,h3,h4,h5,h6 {font-weight: inherit;font-size: inherit;}
    }
 }
 
+@media (max-width: $md3+px) {
+   .page-main {
+      overflow: auto;
+   }
+   .page-main.page-main .page-index__advantages .page-index__list { 
+
+
+   }
+}
 
 /* <Content HTML> ============================================================================================*/
 /* <Content CSS> ============================================================================================*/
