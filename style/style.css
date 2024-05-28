@@ -132,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   min-width: 100%;
+  z-index: 50;
 }
 
 .header__navbar {
@@ -251,9 +252,11 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    gap: 10px;
+  }
+  .header__link {
+    text-align: left;
+    padding-left: 20px;
   }
 }
 /* <БЛОК "FOOTER"> ==========================================================================================*/
