@@ -88,6 +88,7 @@ ul li {
 
 img {
   vertical-align: top;
+  display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -143,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-  height: 40px;
+  min-height: 40px;
 }
 
 .header__logo {

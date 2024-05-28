@@ -1,5 +1,6 @@
 /* <БЛОК "HEADER"> ==========================================================================================*/
 
+// Глобальные стили для "header"
 .header {
    background-color: $bg_color-2;
    position: fixed;
@@ -8,27 +9,31 @@
    min-width: 100%;
 }
 
+// Контейнер для "header"
 .header__container {}
 
-
+// Навигационная строка
 .header__navbar {
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
    position: relative;
-   height: 40px;
+   min-height: 40px;
 }
 
+// Логотип
 .header__logo {
    display: flex;
    align-items: center;
    padding: 0px 0px 0px 10px;
 
+   // Иконка логотипа
    .logo__icon {
       width: 25px;
       height: 25px;
    }
 
+   // Текст логотипа
    .logo__text {
       font-size: 14px;
       font-weight: 700;
@@ -40,20 +45,26 @@
    }
 }
 
-.header__burger {}
+// Бургер
+.header__burger {
 
+}
+
+// Меню
 .header__menu {
    display: flex;
    align-items: center;
 
 }
 
+// Список меню
 .header__list {
    display: flex;
    gap: 20px;
    height: 100%;
 }
 
+// Ссылки в меню
 .header__link {
    padding: 10px 0;
    color: $text_color-1;
