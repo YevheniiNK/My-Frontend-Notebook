@@ -157,6 +157,8 @@
       background-color: inherit;
       color: $text_color-6;
       @include shadow;
+      border: none;
+      border-radius: 10px;
    }
 
 }
