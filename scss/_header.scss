@@ -151,13 +151,13 @@
       font-size: 25px;
       font-weight: 600;
       width: inherit;
+      padding: 10px;
    }
 
    ._activ-link {
-      background-color: inherit;
+      background-color: $bg_color-3;
       color: $text_color-6;
       @include shadow;
-      border: none;
       border-radius: 10px;
    }
 

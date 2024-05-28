@@ -264,14 +264,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 25px;
     font-weight: 600;
     width: inherit;
+    padding: 10px;
   }
   ._activ-link {
-    background-color: inherit;
+    background-color: #ebe691;
     color: #5e5372;
     -webkit-box-shadow: 10px 7px 5px #413659;
             box-shadow: 10px 7px 5px #413659;
     border: 1px solid #413659;
-    border: none;
     border-radius: 10px;
   }
 }
