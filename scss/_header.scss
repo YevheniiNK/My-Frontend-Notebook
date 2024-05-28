@@ -10,6 +10,7 @@
 
 .header__container {}
 
+
 .header__navbar {
    display: flex;
    justify-content: space-between;
@@ -42,11 +43,13 @@
 .header__menu {
    display: flex;
    align-items: center;
+
 }
 
 .header__list {
    display: flex;
    gap: 20px;
+   height: 100%;
 }
 
 .header__link {

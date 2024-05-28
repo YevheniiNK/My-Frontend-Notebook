@@ -108,10 +108,8 @@ h1,h2,h3,h4,h5,h6 {font-weight: inherit;font-size: inherit;}
 /* <БЛОК "MAIN"> ============================================================================================*/
 .main {
    height: 100vh;
+   
    .main__container {
-      
-   }
-   .main__content {
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -119,6 +117,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: inherit;font-size: inherit;}
       align-items: center;
       height: 100vh;
    }
+
 }
 
 /* <Content Start-Page> ============================================================================================*/

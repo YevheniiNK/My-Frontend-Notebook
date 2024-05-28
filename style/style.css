@@ -183,6 +183,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  height: 100%;
 }
 
 .header__link {
@@ -243,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 .main {
   height: 100vh;
 }
-.main .main__content {
+.main .main__container {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
