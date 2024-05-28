@@ -186,10 +186,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__link {
-  padding: 10px 0;
+  padding: 15px 0;
   color: #ebe691;
   font-size: 14px;
-  line-height: 17px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   width: 70px;
