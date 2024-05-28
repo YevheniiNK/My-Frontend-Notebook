@@ -10,10 +10,12 @@
 
 .header__container {}
 
-.header__content {
+.header__navbar {
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
+   position: relative;
+   height: 40px;
 }
 
 .header__logo {
@@ -42,12 +44,12 @@
    align-items: center;
 }
 
-.header-menu__list {
+.header__list {
    display: flex;
-   gap: 5px;
+   gap: 20px;
 }
 
-.header-menu__item-list {
+.header__link {
    padding: 10px 0;
    color: $text_color-1;
    font-size: 14px;
@@ -56,14 +58,16 @@
    width: 70px;
    text-align: center;
 
-   &:hover,{
+   &:hover {
       @include anim(0.4s, 0s);
    }
 }
+
 // Подсветка активной страници в меню
 ._activ-link {
    background-color: $text_color-5;
    border-radius: 5px 5px 0 0;
    color: $text_color-2;
-   font-weight: 700; 
+   font-weight: 700;
 }
+
