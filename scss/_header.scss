@@ -91,7 +91,7 @@
 
 // Все что меньше планшета
 @media (max-width: $md3+px) {
-   //=== Бургер ====
+
    .header__burger {
       display: block;
       position: relative;
@@ -138,12 +138,14 @@
 
    .header__list {
       flex-direction: column;
+      align-items: flex-end;
       gap: 10px;
+      margin-top: 20px;
    }
 
    .header__link {
-      text-align: left;
-      padding-left: 20px;
+      //text-align: left;
+      margin-right: 50px;
    }
 
 }

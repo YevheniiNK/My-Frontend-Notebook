@@ -252,11 +252,14 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     gap: 10px;
+    margin-top: 20px;
   }
   .header__link {
-    text-align: left;
-    padding-left: 20px;
+    margin-right: 50px;
   }
 }
 /* <БЛОК "FOOTER"> ==========================================================================================*/
