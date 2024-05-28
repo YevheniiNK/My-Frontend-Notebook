@@ -156,6 +156,7 @@
    ._activ-link {
       background-color: inherit;
       color: $text_color-6;
+      @include shadow;
    }
 
 }

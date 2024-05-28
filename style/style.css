@@ -268,6 +268,9 @@ h1, h2, h3, h4, h5, h6 {
   ._activ-link {
     background-color: inherit;
     color: #5e5372;
+    -webkit-box-shadow: 10px 7px 5px #413659;
+            box-shadow: 10px 7px 5px #413659;
+    border: 1px solid #413659;
   }
 }
 /* <БЛОК "FOOTER"> ==========================================================================================*/
