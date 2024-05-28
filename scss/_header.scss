@@ -138,14 +138,23 @@
 
    .header__list {
       flex-direction: column;
-      align-items: flex-end;
-      gap: 10px;
+      gap: 50px;
       margin-top: 20px;
+      padding-right: 50px;
    }
 
    .header__link {
-      //text-align: left;
-      margin-right: 50px;
+      text-align: right;
+      color: $text_color-5;
+      font-size: 25px;
+      font-weight: 600;
+      width: 100%;
+      
+   }
+
+   ._activ-link {
+      background-color: inherit;
+      color: $text_color-6;
    }
 
 }

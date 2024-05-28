@@ -252,14 +252,20 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    gap: 10px;
+    gap: 50px;
     margin-top: 20px;
+    padding-right: 50px;
   }
   .header__link {
-    margin-right: 50px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+    width: 100%;
+  }
+  ._activ-link {
+    background-color: inherit;
+    color: #5e5372;
   }
 }
 /* <БЛОК "FOOTER"> ==========================================================================================*/
