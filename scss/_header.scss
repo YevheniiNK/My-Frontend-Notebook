@@ -20,7 +20,7 @@
    flex-wrap: wrap;
    position: relative;
    align-items: center;
-   height: 37px;
+   height: 45px;
    
 }
 
@@ -97,7 +97,7 @@
       position: relative;
       width: 30px;
       height: 20px;
-      line-height: 37px;
+      line-height: 45px;
    }
 
    .header__burger span {
@@ -129,7 +129,7 @@
 
    .header__menu {
       position: fixed;
-      top: 37px;
+      top: 45px;
       left: 0;
       background-color: $text_color-7;
       width: 100%;
