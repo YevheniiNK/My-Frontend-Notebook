@@ -140,16 +140,17 @@
       flex-direction: column;
       gap: 50px;
       margin-top: 20px;
-      padding-right: 50px;
+      min-width: 25%;
+      position: absolute;
+      right: 20px;
    }
 
    .header__link {
-      text-align: right;
+      text-align: left;
       color: $text_color-5;
       font-size: 25px;
       font-weight: 600;
-      width: 100%;
-      
+      width: inherit;
    }
 
    ._activ-link {
