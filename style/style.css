@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 50px;
+    gap: 25px;
     margin-top: 20px;
     min-width: 25%;
     position: absolute;
@@ -289,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
   .header__link {
     text-align: left;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     width: inherit;
     padding: 10px;
@@ -446,7 +446,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: auto;
     width: inherit;
     height: inherit;
-    margin-top: 50px;
+    margin: 40px 0 20px 0;
     -webkit-box-shadow: none;
             box-shadow: none;
     border: none;
@@ -455,12 +455,32 @@ h1, h2, h3, h4, h5, h6 {
   }
   .page-main .page-main__list {
     display: block;
+    margin-top: 10px;
   }
   .page-main .page-main__bg {
-    height: 100vw;
-    max-width: 100%;
+    display: none;
   }
   .page-main .page-main__item img {
     margin: 20px auto;
+    width: 210px;
+  }
+  .page-main .page-main__text {
+    padding: 20px;
+  }
+  .page-main .page-main__text, .page-main .page-main__advantages {
+    -webkit-box-shadow: 10px 7px 5px #413659;
+            box-shadow: 10px 7px 5px #413659;
+    border: 1px solid #413659;
+    border-radius: 20px;
+  }
+  .page-main .page-main__advantages h3 {
+    font-size: 25px;
+    line-height: 43px;
+    color: #5e5372;
+    font-weight: 700;
+  }
+  .page-main .page-main__item-text {
+    font-size: 20px;
+    font-weight: 500;
   }
 }

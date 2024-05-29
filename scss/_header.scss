@@ -163,7 +163,7 @@
 
    .header__list {
       flex-direction: column;
-      gap: 50px;
+      gap: 25px;
       margin-top: 20px;
       min-width: 25%;
       position: absolute;
@@ -173,7 +173,7 @@
    .header__link {
       text-align: left;
       color: $text_color-5;
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 600;
       width: inherit;
       padding: 10px;

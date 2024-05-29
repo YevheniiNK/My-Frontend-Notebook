@@ -211,7 +211,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: inherit;font-size: inherit;}
       overflow: auto;
       width: inherit;
       height: inherit;
-      margin-top: 50px;
+      margin: 40px 0 20px 0;
       box-shadow: none;
       border: none;
       display: block;
@@ -219,15 +219,37 @@ h1,h2,h3,h4,h5,h6 {font-weight: inherit;font-size: inherit;}
 
       .page-main__list {
          display: block;
+         margin-top: 10px;
       }
 
       .page-main__bg {
-         height: 100vw;
-         max-width: 100%;
+         display: none;
       }
 
       .page-main__item img {
          margin: 20px auto;
+         width: 210px;
+      }
+
+      .page-main__text{
+         padding: 20px
+      }
+
+      .page-main__text, .page-main__advantages{
+         @include shadow;
+         border-radius: 20px;
+      }
+
+      .page-main__advantages h3 {
+         font-size: 25px;
+         line-height: 43px;
+         color: $text_color-6;
+         font-weight: 700;
+      }
+
+      .page-main__item-text {
+         font-size: 20px;
+         font-weight: 500;
       }
    }
 
