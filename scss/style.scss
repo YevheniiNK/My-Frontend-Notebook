@@ -131,56 +131,56 @@ h1,h2,h3,h4,h5,h6 {font-weight: inherit;font-size: inherit;}
    @include shadow;
    overflow: hidden;
    
-   .page-index__text {
+   .page-main__text {
       margin: 0px 0px 32px 0px;
-
-      .title span {
-         position: relative;
-         font-size: 36px;
-         line-height: 43px;
-         color: $text_color-6;
-         font-weight: 700;
-         background: $underline;
-      }
    }
 
-   .page-index__descr {
+   .title span {
+      position: relative;
+      font-size: 36px;
+      line-height: 43px;
+      color: $text_color-6;
+      font-weight: 700;
+      background: $underline;
+   }
+
+   .page-main__descr {
       margin: 18px 0px 0px 0px;
       font-size: 18px;
       line-height: 21px;
       color: $text_color-4;
    }
 
-   .page-index__advantages {
+   .page-main__advantages {
       position: relative;
       z-index: 6;
-
-      .page-index__list {
-         display: flex;
-         font-size: 0;
-         justify-content: space-between;
-         margin-top: 20px;
-      }
    }
 
-   .page-index__item {
+   .page-main__list {
+      display: flex;
+      font-size: 0;
+      justify-content: space-between;
+      margin-top: 20px;
+   }
+
+   .page-main__item {
       text-align: center;
-
-      .page-index__item-text {
-         font-size: 16px;
-         line-height: 19px;
-         color: $text_color-4;
-         margin-left: -8px;
-      }
    }
 
-   .page-index__item img {
+   .page-main__item-text {
+      font-size: 16px;
+      line-height: 19px;
+      color: $text_color-4;
+      margin-left: -8px;
+   }
+
+   .page-main__item img {
       width: 150px;
       height: 150px;
       margin-top: 20px;
    }
 
-   .page-index__bg {
+   .page-main__bg {
       position: absolute;
       width: 160%;
       height: 95%;
@@ -196,17 +196,40 @@ h1,h2,h3,h4,h5,h6 {font-weight: inherit;font-size: inherit;}
    }
 }
 
-@media (max-width: $md3+px) {
-   .page-main {
-      overflow: auto;
-   }
-   .page-main.page-main .page-index__advantages .page-index__list { 
-
-
-   }
-}
-
 /* <Content HTML> ============================================================================================*/
 /* <Content CSS> ============================================================================================*/
 /* <Content JS> ============================================================================================*/
 /* <Content Шаблоны> ============================================================================================*/
+
+
+
+/* <"RESPONSIVENESS"> ==========================================================================================*/
+
+// $md3: 767.98;
+@media (max-width: $md3+px) {
+   .page-main {
+      overflow: auto;
+      width: inherit;
+      height: inherit;
+      margin-top: 50px;
+      box-shadow: none;
+      border: none;
+      display: block;
+      text-align: center;
+
+      .page-main__list {
+         display: block;
+      }
+
+      .page-main__bg {
+         height: 100vw;
+      }
+
+      .page-main__item img {
+         margin: 20px auto;
+      }
+   }
+
+
+
+}
